@@ -1,0 +1,71 @@
+<!-- --An Employee registration page in html not stylled just structured with header, nav, main and footer. The main section has two sections one for the registration form and the other for the registered employees. The form has fields for name, email, department, employment type, bio and skills. The registered employees section has a table with name and department columns. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<body>
+    <header><h1>Employee Registration</h1></header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Employees</a>t
+
+    </nav>
+    <main>
+         <section>
+            <h2>Employee Registration Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                       <label>Profile Image:<input type="file"></label><br>
+                    <label for="name">Name</label>
+                <input id="name" type="text" required placeholder="Enter you name"><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" required><br>
+                 <label>Department:</label>
+                <select>
+                    <option>HR</option>
+                    <option>Sales</option>
+                    <option>Engineering</option>
+                </select><br>
+                 <label ><input type="radio" name="employement" value="full-time">Full-time</label>
+                 <label><input type="radio" name="employement" value="part-time">Part-time</label><br>
+                   <label>Bio<textarea placeholder=" Tell us about yourself"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label><input type="checkbox" value="js">JavaScript</label><br>
+                    <label><input type="checkbox" value="py">Python</label><br>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="button">Cancel</button>
+            
+            </form>
+         </section>
+          <section>
+            <h2>Registered Employees</h2>
+            <table>
+                <thead>
+                    <tr>
+                       <th>Name</th>
+                    <th>Department</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                    <td>Kofi</td>
+                <td>Sciennce</td>
+                </tr>
+                <tr>
+                    <td>Tracy</td>
+                    <td>English</td>
+                </tr>
+                </tbody>
+            </table>
+          </section>
+    </main>
+    <footer>Contact Info</footer>
+</body>
+</html>
