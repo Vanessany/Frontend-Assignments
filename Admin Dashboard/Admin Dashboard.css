@@ -1,0 +1,52 @@
+h1{
+  color:blue;
+  font-size: 2rem;
+  font-weight: bold;
+   border: 1px solid black;
+  border-radius: 8px;
+}
+.stat-card{
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 200px;
+  height: 80px;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+#sidebar{
+  background-color: gray;
+
+}
+.dashboard-layout{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+main{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+button:hover{
+background-color: darkblue;
+color: white;
+}
+.stat-row{
+  display: flex;
+  gap: 16px;
+}
+.Recent-Users{
+  justify-content: center;
+}
+table{
+  border-collapse:collapse
+}
+th,td{
+  border: 1px solid black;
+  padding: 8px;
+}
