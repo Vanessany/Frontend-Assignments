@@ -19,16 +19,25 @@ h1{
 }
 
 #sidebar{
-  background-color: gray;
+  background-color: palegoldenrod;
+  padding: 16px;
 
+}
+#sidebar a {
+/* changes text color */  color:cadetblue;  
+/* removes the line from an underlined text */text-decoration: none;
+}
+#sidebar a:hover /* link coloour changes when the mouse is on it */{
+/* changes text color */  color:cornflowerblue;  
 }
 .dashboard-layout{
   display: grid;
   grid-template-columns: 150px 1fr;
+  gap: 20px;
 }
 main{
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   justify-content: space-between;
   flex-direction: column;
 }
@@ -39,6 +48,7 @@ color: white;
 .stat-row{
   display: flex;
   gap: 16px;
+  position: relative;
 }
 .Recent-Users{
   justify-content: center;
