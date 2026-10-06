@@ -1,0 +1,74 @@
+:root{
+  --main-color:bisque;
+}
+header {
+  padding: 20px 30px;
+  border-radius: 8px;
+  background-color:white;
+  border-bottom: 1px solid slategray;
+}
+h1{
+  color:peru;
+  font-size: 2rem;
+  font-weight: bold; 
+  margin: 0;
+}
+
+nav{
+  border: 1px solid black;
+  background-color:  var(--main-color);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  border-radius: 8px;
+  width: 133px;
+ 
+}
+nav a{
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+nav a:hover{
+  color: rgb(207, 128, 33) ;
+  border-left: 4px solid teal;
+  padding-left: 26px;
+
+  flex-grow: 1;
+}
+.layout{
+  display: flex;
+  font-family: system-ui,sans-serif;
+  font-size: 1rem;
+  gap: 20px;
+}
+@media(max-width:750px){
+  .layout{
+  flex-direction: column;
+
+}
+}
+.Status{
+  border: 1px solid black;
+  border-radius: 30px;
+  display: inline-flex;
+  padding: 4px 0;
+}
+.Status span{
+  padding: 4px 6px;
+}
+/* making the pill into a toggle bar instead of a radio */
+.Status input{
+ opacity: 0;  /*it makes the radio(input)invisible but its there just you cant see it */
+ position: absolute;/*it tells the radio buttons to  */
+ /* the span after a checked input is written as .Status input:checked + span */
+ /* The + means "the element right after." */
+}
+ .Status input:checked + span{
+  background-color: palevioletred;
+  border-radius: 30px;  /* just so that the selected colored par is rounded */
+ }
+
+.Status label{
+  position: relative;
+}
