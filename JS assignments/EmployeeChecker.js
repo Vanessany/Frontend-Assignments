@@ -1,13 +1,13 @@
-let employe={name:'Akos',score:50};
-let employee2={name:'Jane',score:100};
-let employee3={name:'Sammy',score:0};
-let employee4={name:'Shiloh',score:80};
-let employee5={name:'Godellena',score:70};
+const employe={name:'Akos',score:50};
+const employee2={name:'Jane',score:100};
+const employee3={name:'Sammy',score:0};
+const employee4={name:'Shiloh',score:80};
+const employee5={name:'Godellena',score:70};
 const employees=[employe,employee2,employee3,employee4,employee5];
 
-for(const item of employees){
-    console.log(item.name+':'+item.score)
-}
+// for(const item of employees){
+//     console.log(item.name+':'+item.score)
+// }
 
 
 function getPerformance(employee){
@@ -26,12 +26,12 @@ for(const item of employees){
    console.log(item.name+':'+item.score+'-'+results)   
 }
 
-for(let i=0;i<employees.length;i++){
-    getPerformance(employees[i])
-}
+// for(let i=0;i<employees.length;i++){
+//     getPerformance(employees[i])
+// }
 
-let i=0
-while(i<employees.length){
-    getPerformance(employees[i])
-    i++
-}
+// let i=0
+// while(i<employees.length){
+//     getPerformance(employees[i])
+//     i++
+// }
