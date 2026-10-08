@@ -19,7 +19,7 @@ for(let i=0;i<names.length;i++){
 }
 
 function checker(number){
-    if(number%2==0){
+    if(number%2===0){
         return'Even'
     }else{
         return'Odd'
